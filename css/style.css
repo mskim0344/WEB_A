@@ -118,6 +118,7 @@ li,ul{list-style: none;}
     background-color: white;
     text-align: center;
     border: 1px solid black;
+    z-index: 100;
 } 
 
 #modal{
@@ -131,4 +132,11 @@ li,ul{list-style: none;}
     background-color: white;
     text-align: center;
     border: 1px solid black;
-} 
+}
+
+
+body .on h3{ 
+    color: red;
+
+}
+

@@ -12,12 +12,38 @@ $(document).ready(function(){
     //     })
     // }, 3000)
 
-    setInterval(function(){
-        $("#slider ul").animate({"marginLeft" : -1200},400, function(){
-            $("#slider li").eq(0).appendTo($("#slider ul"));
-            $("#slider ul").css("margin-left",0).addClass("d-flex")
-        })
-    },3000)
+    // setInterval(function(){
+    //     $("#slider ul").animate({"marginLeft" : -1200},400, function(){
+    //         $("#slider li").eq(0).appendTo($("#slider ul"));
+    //         $("#slider ul").css("margin-left",0).addClass("d-flex")
+    //     })
+    // },3000)
 
+
+
+    // setInterval(function(){
+    //     count++;
+    //     count %= 3;
+    //     $("#slider li").eq(count).addClass('show').siblings().removeClass('show')
+    // }, 3000)
+
+    
+    // $("#maincon h3").click(function(){
+    //     $(this).parent().addClass('on').siblings().removeClass(`on`)
+    // })
+    // $("#triggler").click(function(){
+    //     $("#modal").removeClass("d-none")
+    // })
+    // $("#modal button").click(function(){
+    //     $("#modal ").addClass("d-none")
+    // })
+    
+    var count= 0;
+    setInterval(function(){
+        count++;
+        count %= 3;
+        $("#fadeAni div").eq(count).addClass("on").siblings().removeClass('on')
+    }, 1000)
+    
     
 })
